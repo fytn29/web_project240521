@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/news.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="opened">
+            <table>
+                <tr>
+                    <td><img src="../images/浏览器标题栏1.png"width="25px"></td>
+                    <td><img src="../images/浏览器标题栏2.png"height="25px"></td>
+                    <td><img src="../images/logo无边框.png" width="10px"></td>
+                    <td><sup>舍友总认为自己是只海豹怎么办&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sup></td><td><sub><p>×</p></sub></td>
+                </tr>
+            </table>
+        </div>
+        <div id="url">
+            <table>
+                <form>
+                    <tr>
+                        <td><img src="../images/url栏1.png" height="25px"></td>
+                        <td><img src="../images/url栏2.png" height="25px"> </td>
+                        <td><input name="writeurl" type="url" placeholder="https://home.llq.sbpk/" id="longurl" ></td>
+                        <!-- <td><img src="../images/url栏4.png"height="25px"></td> -->
+                        <td><div class="ar"><img src="../images/url栏3.png" height="25px" ></div></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div id="collect">
+            <table>
+                <tr>
+                    <td><img src="../images/收藏栏7.png" height="30px"></td>
+                    <!-- <td><a href="./义肢预约.html"><img src="../images/收藏栏2.png" height="30px"></a></td> -->
+                    <td><img src="../images/收藏栏2.png" height="30px"></td>
+                    <td><img src="../images/收藏栏3.png" height="30px"></td>
+                    <td><img src="../images/收藏栏4.png" height="30px"></td>
+                    <td><img src="../images/收藏栏5.png" height="30px"></td>
+                    <td><img src="../images/收藏栏6.png" height="30px"></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <div id="new3-2">
+        <img src="../images/网络崩溃3.png" width="400px" >
+        <p>你的秘密，将不再是秘密!</p>
+    </div>
+</body>
+
+<script>  
+    // 当页面加载完成后执行  
+    window.onload = function() {  
+        // 创建一个函数来弹出警告框  
+        function showAlert(message, delay) {  
+            setTimeout(function() {  
+                alert(message);  
+            }, delay);  
+        }  
+      
+        // 循环5次，每次弹出不同的警告框，延迟时间递增  
+        for (var i = 0; i < 2; i++) {  
+            // 使用闭包来确保每次循环的延迟时间都是正确的  
+            (function(index) {  
+                var delay = index * 2000 + 2000; // 每个警告框之间的间隔是2秒  
+                showAlert("警告：请立即离开，不要继续在该网站上停留或进行任何操作", delay);  
+            })(i);  
+        }  
+    };  
+    </script>  
+</html>

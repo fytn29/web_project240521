@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" type="text/css"> 
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="cube">  
+        <div class="face front"></div>  
+        <div class="face back"></div>  
+        <div class="face left"></div>  
+        <div class="face right"></div>  
+        <div class="face top"></div>  
+        <div class="face bottom"></div>  
+      </div> 
+<div id="logindad">    
+<div class="login">  
+    <h2>Login</h2>  
+    <table>
+        <form id="loginForm">     
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="密码是fj0717" required>
+                    <span id="word1" class="hideword">...</span>
+                    <span id="word2" class="hideword">为什么密码直接显示了？</span>
+                    <span id="word3" class="hideword">试试吧</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" >Login</button></td>
+            </tr>
+        </form>  
+    </table>
+    <p id="message"></p>  
+ 
+        <!-- 添加转圈动画的容器 -->  
+        <div id="success-animation" class="hide-animation">  
+            <div class="spinner"></div> <!-- 转圈的圆形图案 -->  
+        </div> 
+
+  </div>  
+</div> 
+  <script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {  
+    event.preventDefault();  
+    var password = document.getElementById('password').value;  
+    var correctPassword = "fj0717";  
+    if (password === correctPassword) {   
+      setTimeout(function() {  
+            window.location.href = './cs.html'; // 登录成功后重定向    
+        }, 1000); 
+       // 登录成功后重定向  
+    } else {  
+      document.getElementById('message').textContent = '密码错误，请重试。';  
+    }  
+  });  
+  </script>  
+
+</body>
+</html>

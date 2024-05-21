@@ -1,0 +1,187 @@
+/* body{
+    background-image: url(../images/电脑1.jpg);
+    background-size: cover;
+} */
+
+@font-face{
+    font-family:'xt1';
+    src:url(../字体/细黑体1.ttf) format('truetype');
+    font-weight: lighter;
+
+}
+body{
+    font-family:'xt1';
+}
+.image-carousel { 
+    left: 420px;   
+    top:  300px;
+    position: relative;    
+    overflow: hidden;  
+    width: 500px;    
+    height: 60px;
+    clip-path: polygon(8% 0, 100% 0%, 91% 100%, 0 100%);
+     /* 添加高度，确保容器大小合适 */  
+}  
+.image-carousel2 {    
+    left: 60px;
+    top:  400px;
+    position: relative;    
+    overflow: hidden;  
+    width: 500px;    
+    height: 90px;
+    clip-path: polygon(8% 0, 100% 0%, 91% 100%, 0 100%);
+     /* 添加高度，确保容器大小合适 */  
+} 
+  
+.carousel-image {   
+    
+    position: absolute;    
+    width: 100%; /* 宽度设置为100%，确保图片填满容器 */  
+    height: 100%; /* 高度也设置为100% */  
+    background-size: cover;    
+    background-position: center;    
+    animation: slideShow 16s infinite; /* 动画名称、持续时间和循环次数 */  
+    opacity: 0;    
+}  
+  
+@keyframes slideShow {  
+    0%, 20% { opacity: 0; } /* 图片在前20%的时间内不可见 */  
+    25%, 45% { opacity: 1; } /* 图片在接下来的20%时间内完全可见 */  
+    /* 你可以根据需要调整这些百分比 */  
+    /* ...其他关键帧状态... */  
+    100% { opacity: 0; } /* 图片在动画结束时不可见 */  
+}  
+  
+.carousel-image:nth-child(1) { animation-delay: 0s; }  
+.carousel-image:nth-child(2) { animation-delay: 4s; }  
+.carousel-image:nth-child(3) { animation-delay: 8s; }  
+.carousel-image:nth-child(4) { animation-delay: 11s; }
+/* .carousel-image:nth-child(1) { animation-delay: 16s; }  */
+/* 根据图片数量添加更多样式 */
+@keyframes slideShow {  
+    0% { opacity: 0; }  
+    20% { opacity: 1; }  
+    40% { opacity: 1; }  
+    70% { opacity: 0; }  
+    100% { opacity: 0; }  
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}     
+a{
+    color: aliceblue;
+    text-decoration: none;
+}  
+.a{
+    left: 400px;
+    top: 170px;
+    position: absolute;
+}
+.b,.b::before{
+    z-index: 999;
+    color: azure;
+    position: absolute;
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 12px;
+}
+.b::before{
+    content: '二周目的终焉';
+    /* rgb(211,250,9) */
+    text-shadow: -5px -5px 0px  rgb(221, 0, 255),5px -5px 0px rgb(0, 200, 255);
+    clip-path: inset(100% 0px 40px 0px);
+   
+}
+.a:hover .b::before{
+    /* steps设置逐帧动画，值越小越卡顿 */
+    animation: move 2s steps(2);
+}
+@keyframes move{
+    0%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-20px,-10px)
+    }
+    10%{
+        clip-path:inset(10% 0px 85% 0px);
+        transform:translate(10px,10px)
+    }
+    20%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-10px,10px)
+    }
+    30%{
+        clip-path:inset(10% 0px 85% 0px);
+        transform:translate(0px,5px)
+    }
+    40%{
+        clip-path:inset(50% 0px 30% 0px);
+        transform:translate(-5px,0px)
+    }
+    50%{
+        clip-path:inset(10% 0px 30% 0px);
+        transform:translate(5px,0px)
+    }
+    60%{
+        clip-path:inset(40% 0px 30% 0px);
+        transform:translate(5px,10px)
+    }
+    70%{
+        clip-path:inset(50% 0px 30% 0px);
+        transform:translate(-10px,10px)
+    }
+    80%{
+        clip-path:inset(80% 0px 5% 0px);
+        transform:translate(20px,-10px)
+    }
+    90%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-10px,0px)
+    }
+    100%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(0px,0px)
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader{
+    top: 700px;
+    /* left: 400px; */
+    position: absolute;
+    width: 1200px;
+    height: 10px;
+    /* background-color: #FFF; */
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0,0,0,0.5));
+
+}
+.loader::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+    rgb(50, 50, 100),
+    rgb(10, 121, 255),
+    rgb(150, 0, 150)
+    );
+    background-size: 500%;
+    filter: blur(20px);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0 ;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}

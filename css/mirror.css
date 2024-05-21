@@ -1,0 +1,58 @@
+#mirror{
+    
+   margin-top: 100px;
+    text-align: center;
+
+}
+body{
+    background-color: black;
+}
+
+.hideword{
+    display: inline;
+    position: absolute; /* 使得文字出现在容器的相对位置 */  
+    opacity: 0;  
+    font-size: 25px;
+    color: white; /* 你可以设置你想要的文字颜色 */  
+    background-color: black; /* 你可以设置你想要的背景颜色 */  
+    padding: 5px; /* 你可以设置你想要的内边距 */  
+    border-radius: 5px; /* 你可以设置你想要的边框圆角 */  
+}
+#div1{
+    transition: opacity 0.7s ease-in-out; 
+    top:165px;
+    left: 100px; 
+}
+#div2{
+    transition: opacity 2.7s ease-in-out; 
+    top:200px;
+    left: 100px; 
+}
+div:hover .hideword{
+    display: inline;
+    opacity: 1;
+}
+#gb{
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+/* 响应式媒体查询 */  
+@media screen and (max-width: 600px) {  
+    /* 当屏幕宽度小于或等于600px时 */  
+    #mirror img {  
+        width: 100%; 
+    }  
+      
+    .hideword {  
+        font-size: 16px; 
+    }  
+}  
+  

@@ -1,0 +1,13 @@
+h5{
+    text-align: left;
+    color: #620000;
+}
+main{
+    color: #505050;
+}
+.bjyzp{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>转圈加载特效</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        .loader {  
+    border: 16px solid #f3f3f3; /* Light grey */  
+    border-top: 16px solid #747474; /* Blue */  
+    border-radius: 50%;  
+    width: 80px;  
+    height: 80px;  
+    animation: spin 2s linear infinite;  
+    margin: 100px auto;  
+}  
+@keyframes spin {  
+    0% { transform: rotate(0deg); }  
+    100% { transform: rotate(360deg); }  
+}  
+  
+.loader-inner {  
+    /* 你可以在这里添加一些额外的样式，比如文本或者图标 */  
+    display: none; /* 隐藏内部元素，因为我们只需要外部的边框动画 */  
+}
+body{
+    background-image: url(../images/桌面壁纸1\ -\ 副本.jpg);
+}
+div{
+    color: aliceblue;
+    font-size: 30px;
+    align-self: center;
+    align-items: center;
+}
+    </style>
+</head>  
+<body>  
+    <div class="loader">  
+        <div class="loader-inner"></div>  
+    </div>  
+    <!-- <div class="fullscreen-image">
+        <img src="../images/桌面壁纸1.jpg">
+    </div> -->
+    <div>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        正在登录中...
+    </div>
+</body>  
+
+<script>  
+    // 页面加载完成后执行  
+    window.onload = function() {  
+        // 设置2秒后执行的函数  
+        setTimeout(function() {  
+            // 跳转到新的URL  
+            window.location.href = '../html/desktop.html'; // 替换为你想要跳转的URL  
+        }, 2500); // 2000毫秒等于2秒  
+    };  
+</script>  
+</html>

@@ -1,0 +1,132 @@
+
+header{
+    background-color: #00177e;
+    color: rgb(255, 240, 27);
+}
+.images{
+    height: 100vh;
+    filter: blur(5px) opacity(100%);
+    right: 1px;
+}
+body{
+    overflow: hidden;
+    background: linear-gradient(#00177e,rgba(2, 16, 98),rgba(0, 0, 156),rgba(1, 3, 109));
+}
+/* .left,header{
+    background: linear-gradient(#00177e,rgba(2, 16, 98),rgba(0, 0, 156),rgba(1, 3, 109));
+} */
+.left th{
+    color: rgb(255, 242, 0,0.9);
+}
+.close{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+.span1{
+    color: rgba(255, 217, 0, 0.9);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "黑体";
+    text-decoration: double;
+}
+a{
+    text-decoration: double;
+    color: rgba(255, 217, 0, 0.9);
+}
+.left td{
+    color: rgb(255, 230, 0,0.9);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+hr{
+    color: rgb(79, 29, 7);
+}
+.right{
+    background-color: rgba(227, 234, 241, 0.8);
+    
+}
+.left,.right{
+    float: left;
+}
+body{
+    background-image: url(../images/壁纸3.jpg);  
+
+}
+.left{
+    background: linear-gradient(#00177e,rgba(2, 16, 98),rgba(0, 0, 156),rgba(1, 3, 109));
+    height: 100vh;
+}
+.right{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: small;
+    color: rgb(68, 68, 68);
+    font-family: "黑体";
+}
+/* 哈一个完美的自言自语冒泡 */
+.hideword{
+    display: inline;
+    position: absolute; /* 使得文字出现在容器的相对位置 */  
+    opacity: 0;  
+    transition: opacity 0.7s ease-in-out;  
+    font-size: 12px;
+    color: white; /* 你可以设置你想要的文字颜色 */  
+    background-color: black; /* 你可以设置你想要的背景颜色 */  
+    padding: 5px; /* 你可以设置你想要的内边距 */  
+    border-radius: 5px; /* 你可以设置你想要的边框圆角 */  
+}
+th:hover .hideword,td:hover .hideword{
+    display: inline;
+    opacity: 1;
+}
+#word1{
+    /* visibility: hidden; */
+    /* display: none; */
+    /* position: absolute; 使得文字出现在容器的相对位置   */
+    top: 55px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 110px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#word2{
+    top: 4px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 90px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#word3{
+    top: 105px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 230px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#word4{
+    top: 85px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 230px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA{
+    top: 150px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 430px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA1{
+    top: 341px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 430px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA2{
+    top: 456px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 430px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA3{
+    top: 700px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 430px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA4{
+    top: 700px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 335px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA5{
+    top: 700px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 638px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#wordAAA6{
+    top: 473px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 850px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+

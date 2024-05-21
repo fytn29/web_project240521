@@ -1,0 +1,257 @@
+*{
+    overflow: hidden;
+}
+@keyframes colorChange{
+    0%{background-color: black;}
+    25%{background-color: rgb(37, 5, 74);}
+    50%{background-color: rgb(15, 1, 59);}
+    75%{background-color: rgb(3, 8, 72);}
+    100%{background-color: rgb(0, 0, 0);}
+}
+@keyframes borderFlow {  
+    0% { 
+        border-color: aqua;
+        /* border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) ;   */
+    }  
+    50% {  
+        border-color: rgb(255, 0, 212);
+        /* border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red) ;   */
+    } 
+    100% { 
+        border-color: aqua;
+        /* border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) ;   */
+    }
+} 
+@keyframes spin {  
+    from {  
+      transform: rotate(0deg);  
+    }  
+    to {  
+      transform: rotate(360deg);  
+    }  
+  }
+#photospin{
+    animation: spin 5s linear infinite;  
+} 
+@keyframes breathe {  
+    0%, 100% {  
+      transform: scale(1); /* 原始大小 */  
+      opacity: 1; /* 完全可见 */  
+    }  
+    50% {  
+      transform: scale(1.05); /* 放大到1.05倍 */  
+      opacity: 0; /* 透明度稍微降低，可选 */  
+    }  
+  } 
+#cyber{
+    animation: breathe 15s ease-in-out infinite;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#opened{
+    background-color:rgb(242, 242, 242) ;
+    font-size: 10px;
+    color:rgb(136, 136, 136)
+}
+#url,#collect{
+    background-color:rgb(255, 255, 255) ;
+    font-size: 10px;
+    color:rgb(136, 136, 136)
+}
+add>table{
+    left:25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3px;
+    /* float:left; */
+    margin-left: 150px;
+    background-color:rgb(235, 235, 236) ;
+    font-size: 10px;
+    color:rgb(62, 62, 62)
+}
+add>td{
+    text-decoration: solid;
+}
+add{
+    left:25px;
+    margin-left: 100px;
+    background-color:rgb(235, 235, 236) ;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+whiteadd{
+    color: rgb(5,38,94);
+}
+body{
+    /* background-color: rgb(235, 235, 236); */
+    /* background-color: rgb(5, 38, 94); */
+    animation: colorChange 10s linear infinite;
+}
+
+#opened p{
+    font-size: 15px;
+
+}
+.ar{
+    text-align: right;
+}
+#longurl{
+    width: 910px;
+    height:25px;
+    border: 0;
+}
+#logo{
+    text-align: center;
+    margin-top: 180px;
+    /* text-shadow: 15px 15px 10px rgb(159, 168, 237),15px 15px 10px rgb(59, 240, 216); */
+}
+#logo h1{
+    background: linear-gradient(to right , rgb(0, 221, 255),rgb(255, 0, 238));  
+    background-clip: text;  
+    -webkit-text-fill-color: transparent;   
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    /* height: 140px; */
+}
+#cyber{
+    font-family: 'xt1';
+    font-size: 80px;
+}
+#collect{
+    position:static;
+    display: flex;  
+    align-items: center; /* 垂直居中 */ 
+}
+#search{
+    text-align: center;
+    width:350px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-left: 3px dashed rgb(255, 0, 221);
+    border-top: 3px dashed rgb(255, 0, 221);
+    border-bottom: 4px dashed rgb(0, 170, 255);
+    border-right: 4px dashed rgb(0, 170, 255);
+    position: absolute;
+    left:535px;
+    top: 500px;
+    /* animation: gradient-border 3s linear infinite;  */
+}
+
+
+#sbsjyjkd{
+    text-align: center;
+    width: 280px;
+    height:38px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+
+}
+#click{
+    text-align: center;
+    height:40px;
+    width:70px;
+    background:linear-gradient(rgb(121, 121, 184),rgb(111, 0, 255));
+    color:rgb(240, 12, 202);
+    display: inline-block;
+}
+#right{
+    top: 700px;
+    margin: 10px;
+    border: 1px;
+    background-color: bisque;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+#right a:hover{
+    text-shadow: 3px 3px 3px red;
+}
+#right h2{
+    font-family: "黑体";
+    color: brown;
+}
+#word9{
+    font-size: 9px;
+    background-color: #a52a2a;
+    color: #d6dcf8;
+}
+
+
+.close{
+    position: absolute;
+    font-size: 22px;
+    right: 10px;
+    top: 2px;
+    color: rgb(81, 81, 81);
+}
+
+
+
+a:hover{
+    color: #fff;
+}
+
+h3 {  
+    display: block;  
+    padding: 3px 5px;  
+    color: #fff;  
+    background-size: 200% 200%;  
+    text-decoration: none;  
+    font-size: 14px;  
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1);  
+    transition: all 2s ease;  
+    position: relative;  
+    overflow: hidden;  
+}  
+  
+h3:hover {  
+    /* 放大并增强闪烁效果 */  
+    color: #fff;
+    animation: neon 5s ease infinite;  
+    transform: scale(1.05);  
+    border-radius: 5px;
+
+}  
+  
+@keyframes neon {  
+ 
+    0%,100%{
+        background: linear-gradient(45deg, #ff0000, rgb(255, 135, 83)); 
+        background-position: 0 0;  
+    }
+    25%{
+        background: linear-gradient(45deg, #ff7300, #ffe100); 
+    }
+    50% {  
+        background: linear-gradient(45deg,  #e1ff00, #0f0); 
+        background-position: 100% 0;  
+    }  
+    75%{
+        background: linear-gradient(45deg, rgb(0, 255, 200), rgb(0, 170, 255)); 
+    }
+    /* 100%{  
+        background: linear-gradient(45deg,  #0059ff, rgb(119, 0, 255));  
+        background-position: 0 0;  
+    }   */
+    /* 添加透明度变化以模拟闪烁效果 */  
+    0%, 100% {  
+        opacity: 0.7;  
+    }  
+    50% {  
+        opacity: 1;  
+    }  
+}
+
+@font-face{
+    font-family:'xt1';
+    src:url(../字体/斜体伪赛博.ttf) format('truetype');
+    font-weight: lighter;
+
+}

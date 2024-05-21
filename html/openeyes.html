@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/openeyes.css" type="text/css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="carousel-image0">  
+    <img src="../images/房间朦胧.png" class="close carousel-image">
+    <img src="../images/房间朦胧.png" class="open1 carousel-image"> 
+    <img src="../images/房间朦胧.png" class="close carousel-image">
+    <img src="../images/房间朦胧.png" class="open1 carousel-image"> 
+    <img src="../images/房间朦胧.png" class="open2 carousel-image"> 
+    <img src="../images/房间朦胧.png" class="openall carousel-image">
+    <img src="../images/房间朦胧.png" class="openall2 carousel-image">
+</div>
+</body>
+
+<script>  
+  // 假设你的动画只运行一次（不是无限循环）  
+  // 你可以通过监听动画的结束事件（如果浏览器支持）或者设置一个定时器来等待动画完成  
+    
+  // 使用setTimeout来模拟等待动画结束（这里假设动画持续13秒）  
+  setTimeout(function() {  
+      // 动画结束后，跳转到另一个页面  
+      window.location.href = "../html/room.html"; 
+  }, 12000); 
+    
+  // 注意：如果你使用的是无限循环的动画，你需要通过其他方式来检测动画的“视觉”结束点，比如检查元素的某个属性变化  
+    
+  </script>  
+</html>

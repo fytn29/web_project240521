@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/table.css" type="text/css">
+</head>
+<body>
+    <div class="table">
+    <form method = "post" action="tablepost.html">
+        <table >
+            <tr>
+                <th colspan="2"><h1>ATT安全公司应聘信息登记表</h1></th>
+            </tr>
+            <tr >
+                <td>姓名</td><td ><input name="name"type="text"></td>
+            </tr>
+            <tr >
+                <td>应聘岗位</td><td >
+                    <select>
+                        <option>精英武者</option>
+                        <option>精英安全专家</option>
+                        <option>危机应对专员</option>
+                        <option>战术规划师</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>照片</td><td><input name="photo"type="file"></td>
+            </tr>
+            <tr>
+                <td>年龄</td><td><input name="number"type="number" min="18"max="50" step="1" value="20"></td>
+            </tr>
+            <tr>
+                <td>ID号</td><td><input name="id"type="text"></td>
+            </tr>
+            <tr>
+                <td>星联号</td><td><input name="xl"type="text"></td>
+            </tr>
+            
+                <td>国籍/地区</td><td><!-- <tr>国籍 -->
+                    <select name="area">
+                        <option value="gg">硅钢邦联</option>
+                        <option value="my">漠亚国</option>
+                        <option value="ag">A港</option>
+                        <option value="aq">氨仟域</option>
+                        <option value="uv">UV湾</option>
+                        <option value="nh">霓虹星国</option>
+                        <option value="aj">安居东国</option>
+                        <option value="gg">咕咕岛</option>
+                        <option value="kb">咔吧国</option>
+                        <option value="sl">数联界</option>
+                        <option value="gg">不夜国</option>
+                        <option value="lz">量子帝国</option>
+                        <option value="we">我爱web自治州</option>
+                        <option value="zdy">黑户</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>联系电话</td><td><input name="dh" type="text"></td>
+            </tr>
+            <tr>
+                <td>邮箱</td><td><input name="yx" type="text"></td>
+            </tr>
+            <tr>
+                <td>教育背景</td><td><textarea name="jy" rows="2" cols="24"></textarea></td>
+            </tr>
+            <tr>
+                <td>身体状况(体检报告)</td><td><input name="jk" type="file"></td>
+            </tr>
+            <tr>
+                <td>工作经历</td><td><textarea name="gz" rows="4" cols="24" placeholder="请详细描述您过去的工作经历，包括工作内容、职责及所取得的成就"></textarea></td>
+            </tr>
+            <tr>
+                <td>技能及特长</td><td><textarea name="jn" rows="4" cols="24" placeholder="格斗技能/武器使用/身体改造/信息技术/其他技能"></textarea></td>
+            </tr>
+            <tr>
+                <td>个人目标与期望</td><td><textarea name="mbqw" rows="4" cols="24" placeholder="在加入我们的组织后，你希望实现哪些目标？你对自己的未来有何期望？"></textarea></td>
+            </tr>
+            <tr>
+                <td><input name="sub" type="submit" value="提交"></td><td><input name="res" type="reset"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+
+</body>
+</html>

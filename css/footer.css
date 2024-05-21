@@ -1,0 +1,5 @@
+#footertable,td{
+    border:1px;
+    background-color: rgb(204, 202, 200);
+    border-color: rgb(128, 130, 130);
+}

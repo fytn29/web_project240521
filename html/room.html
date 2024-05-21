@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/room.css"  rel="stylesheet" type="text/css">
+</head>
+<body>
+    <a href="./login.html">
+        <div class="computer"></div><span id="word1" class="hideword">电脑是开着的</span>
+    </a>
+    <div id="lable">
+        <a href="../html/note.html"><img src="../images/便签.jpg" class="parallelogram-img"> </a>
+        <span id="word2" class="hideword">这有一张便签</span> 
+    </div>
+    <div id="windowdiv">
+        <div class="window"></div>
+        <span id="word3" class="hideword">窗户外面…是什么地方？</span>
+        <span id="word4" class="hideword">好陌生的景色，我究竟是在哪里?</span>
+    </div>
+    <div id="zhangqiandiv">
+        <div class="zhangqian"></div>
+        <span id="word5" class="hideword">张乾的联系方式...要联系他吗...</span>
+    </div>
+
+    <!-- 时间 -->
+    <div id="addtime">2089-04-04</div>
+    <div id="currentTime"></div>  
+
+
+    <div id="audioall">
+        <div class="audio-controls">  
+            <table >
+                <tr>
+                    <th colspan="3">MvBt-三代收音机</th>
+                </tr>
+                <tr>
+                    <td><button id="prevAudio">&nbsp;◁&nbsp;</button></td>
+                    <td><button id="pauseAudio">&nbsp;♫&nbsp;</button> </td>
+                    <td><button id="nextAudio">&nbsp;▷&nbsp;</button></td>
+                </tr>
+                  
+            </table>
+        </div>  
+        <span id="word6" class="hideword">这是...收音机?...好古老的物件，要不要听一下</span>
+        <div class="audio-list">  
+            <audio id="audio1" preload="auto" src="../多媒体/新闻-丧尸危机.mp3"></audio>  
+            <audio id="audio2" preload="auto" src="../多媒体/新闻-核辐射饮料.mp3"></audio>  
+            <audio id="audio3" preload="auto" src="../多媒体/新闻-粉钻大盗.mp3"></audio>  
+            <audio id="audio4" preload="auto" src="../多媒体/新闻-植入副脑.mp3"></audio>  
+            <audio id="audio5" preload="auto" src="../多媒体/广告时间（背景音乐.mp3"></audio>  
+        </div>  
+    </div>
+
+
+    <script>  
+        function updateTime() {  
+            const now = new Date();  
+            const hours = String(now.getHours()).padStart(2, '0'); // 两位数小时  
+            const minutes = String(now.getMinutes()).padStart(2, '0'); // 两位数分钟  
+            const seconds = String(now.getSeconds()).padStart(2, '0'); // 两位数秒  
+            const timeString = `${hours}:${minutes}:${seconds}`;  
+  
+            const currentTimeElement = document.getElementById('currentTime');  
+            currentTimeElement.textContent = timeString;  
+        }  
+        // 首次加载页面时显示时间  
+        updateTime();  
+        // 每秒更新一次时间  
+        setInterval(updateTime, 1000); // 1秒 = 1000毫秒  
+
+
+
+         // 获取所有音频元素和控制按钮  
+const audioElements = [...document.querySelectorAll('.audio-list audio')];  
+let currentAudioIndex = 0; // 当前播放的音频索引  
+  
+// 播放指定的音频  
+function playAudio(index) {  
+    // 停止当前音频  
+    if (audioElements[currentAudioIndex] && !audioElements[currentAudioIndex].paused) {  
+        audioElements[currentAudioIndex].pause();  
+    }  
+  
+    // 隐藏所有音频元素  
+    audioElements.forEach(audio => audio.style.display = 'none');  
+  
+    // 显示并播放新的音频  
+    currentAudioIndex = index;  
+    audioElements[currentAudioIndex].style.display = 'block';  
+    audioElements[currentAudioIndex].play();  
+}  
+  
+// 上一首功能  
+document.getElementById('prevAudio').addEventListener('click', () => {  
+    playAudio((currentAudioIndex > 0) ? currentAudioIndex - 1 : audioElements.length - 1);  
+});  
+  
+// 下一首功能  
+document.getElementById('nextAudio').addEventListener('click', () => {  
+    playAudio((currentAudioIndex < audioElements.length - 1) ? currentAudioIndex + 1 : 0);  
+});  
+  
+// 播放/暂停功能  
+document.getElementById('pauseAudio').addEventListener('click', () => {  
+    const currentAudio = audioElements[currentAudioIndex];  
+    if (currentAudio.paused) {  
+        currentAudio.play();  
+    } else {  
+        currentAudio.pause();  
+    }  
+});  
+  
+// 初始化：显示第一个音频，但不自动播放  
+audioElements[currentAudioIndex].style.display = 'block';
+    </script>  
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color:rgb(235, 235, 236) ;
+    font-size: 10px;
+    color:rgb(136, 136, 136)
+}
+sup,sub{
+    background-color:rgb(235, 235, 236) ;
+    font-size: 10px;
+    color:rgb(136, 136, 136)
+}
+.color1{
+    background-color: rgb(145, 174, 255);
+}
+.color2{
+    background-color: rgb(238, 148, 155);
+}
+h3{
+    margin-left: 20px;
+    color:black;
+    font-size: 25px;
+    font-family: "黑体";
+    font-weight: 1000;
+    text-shadow: 10px 10px 5px rgb(77, 77, 77);
+}
+pre{
+    font-size: large;
+    
+}
+main{
+
+    background-color: rgb(51, 48, 48);
+}
+h1{
+    font-size: 35px;
+    color: aliceblue;
+    text-shadow: 10px 10px 20px rgb(75, 67, 67);
+}
+div {
+    color: aliceblue;
+}
+#table{
+    /* right:0; */
+    /* width: 100px;
+    height: 90px; */
+    /* position: fixed; */
+    /* float: right; */
+    
+    background-image: url(../images/广告1-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+th,td{
+    font-size: 30px;
+}
+a:link,a:visited{
+    color: aliceblue;
+}
+a:hover{
+    text-shadow: 20px 20px 20px rgb(255, 0, 0);
+    font-weight: 900;
+}
+a:active{
+    color: rgb(255, 0, 0);
+    text-shadow: 20px 20px 20px rgb(255, 0, 0);
+    font-weight: 900;
+}
+h1,div{
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+h3{
+    font-size: 27px;
+    font-weight: 500;
+}
+.img1{
+    position: relative;
+    width: 400px;
+    right: -910px;
+    top: -320px;
+}
+.img2{
+    position: relative;
+    width: 400px;
+    right: -910px;
+    top: -300px;
+}
+.img3{
+    position: relative;
+    width: 400px;
+    right: -910px;
+    top: -310px;
+}
+.img4{
+    position: relative;
+    width: 400px;
+    right: -910px;
+    top: -310px;
+}
+
+@font-face{
+    font-family:'adver';
+    src:url(../字体/字魂天龙行楷\(商用需授权\).ttf) format('truetype');
+}
+h1,h3{
+    font-family:'adver';
+}

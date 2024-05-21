@@ -1,0 +1,22 @@
+h1{
+    font-size: 20px;
+    font-family: "黑体";
+}
+table{
+    height: 720px;
+    width: 600px;
+    background:linear-gradient(rgb(228, 223, 180,0.7),rgb(252, 230, 185,0.7),rgb(241, 229, 196,0.7));
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.table{
+    top: 150px;
+}
+body{
+    background-image: url(../images/table.jpg);
+}
+td{
+    color:rgb(41, 26, 1);
+    font-size: 17px;
+}

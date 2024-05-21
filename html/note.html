@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Video Play Once and Redirect</title>  
+    <style>  
+        /* CSS for fullscreen video */  
+        html, body {  
+            margin: 0;  
+            padding: 0;  
+            height: 100%;  
+            overflow: hidden;  
+        }  
+  
+        #fullscreen-video {  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            object-fit: cover; /* Maintain aspect ratio */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <video id="fullscreen-video" autoplay loop muted>  
+        <source src="../多媒体/拿便签1.mp4" type="video/mp4">  
+        Your browser does not support the video tag.  
+    </video>  
+  
+    <script>  
+        // JavaScript to remove loop attribute and redirect after video ends  
+        document.addEventListener('DOMContentLoaded', function() {  
+            var video = document.getElementById('fullscreen-video');  
+  
+            // Remove loop attribute to prevent video from looping  
+            video.removeAttribute('loop');  
+  
+            video.addEventListener('ended', function() {  
+                // Redirect to the specified HTML page  
+                window.location.href = '../html/room.html';  
+            }, false);  
+        });  
+    </script>  
+</body>  
+</html>

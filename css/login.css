@@ -1,0 +1,176 @@
+.login {  
+    width: 350px;  
+    padding: 16px; 
+    left: 500px; 
+    background-color: white;  
+    border: 1px solid #ddd;  
+    border-radius: 4px;  
+    text-align: center;  
+    margin-top: 50px;  
+  }  
+    
+  h2 {  
+    text-align: center;  
+  }  
+
+  form {  
+    margin-top: 20px;  
+    text-align: center;
+  }  
+  table,td,tr{
+    text-align: center;
+    margin: 25px;
+  }
+    
+  input[type=password] {  
+    width: 80%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+    
+  input[type=password]:focus {  
+    background-color: #ddd;  
+    outline: none;  
+  }  
+    
+  button {  
+    background-color: #000000;  
+    color: white;  
+    padding: 14px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+  }  
+    
+  button:hover {  
+    opacity: 1;  
+  }  
+    
+  #message {  
+    color: rgb(0, 183, 255);  
+    font-weight: bold;  
+    margin-top: 10px;  
+  } 
+  body{
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background: linear-gradient(rgb(214, 190, 217)rgb(183, 170, 196)b,rgb(147, 183, 207));
+  }
+
+ .cube {  
+  position: relative;  
+  left: 500px;
+  top: 500px;
+  width: 100px; /* 立方体的宽度 */  
+  height: 100px; /* 立方体的高度 */  
+  transform-style: preserve-3d; /* 保持子元素的3D空间 */  
+  transform: rotateX(0deg) rotateY(0deg); /* 初始旋转状态 */  
+}  
+.face {  
+  position: absolute;  
+  background-size: cover; /* 图片覆盖整个面 */  
+}  
+/* ... 其他CSS代码保持不变 ... */  
+/* 定义旋转动画 */  
+@keyframes rotateCube {  
+  from {  
+    transform: rotateX(0deg) rotateY(0deg);  
+  }  
+  to {  
+    transform: rotateX(360deg) rotateY(360deg);  
+  }  
+}  
+/* 应用旋转动画到立方体容器 */  
+.cube {  
+  /* ... 其他样式保持不变 ... */  
+  animation: rotateCube 5s infinite linear; /* 应用动画，5秒旋转一周，无限次循环，线性速度 */  
+}
+
+.left { 
+  transform: rotateY(-90deg) translateZ(100px);
+   background-color: rgb(77, 77, 77);opacity: 0.5;
+   width: 100px; /* 每个面的宽度 */  
+  height: 100px; /* 每个面的高度 */  
+  } /* 左面 */  
+
+.top {
+   transform: rotateX(90deg) translateZ(100px);
+  background-color: rgb(0, 0, 0); opacity: 0.5;
+  width: 100px; /* 每个面的宽度 */  
+  height: 100px; /* 每个面的高度 */  
+} /* 上面 */  
+
+ #logindad {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 70vh; /* 视口高度 */  
+}  
+  
+.login {  
+    /* 移除left属性和其他可能干扰居中的样式 */  
+    width: 350px;  
+    padding: 16px;  
+    background-color: white;  
+    border: 1px solid #ddd;  
+    border-radius: 4px;  
+    text-align: center;  
+    /* 如果需要额外的外边距，可以添加 */  
+}
+
+.hideword{
+    display: inline;
+    position: absolute; /* 使得文字出现在容器的相对位置 */  
+    opacity: 0;  
+     left: 700px;
+    font-size: 15px;
+    color: white; /* 你可以设置你想要的文字颜色 */  
+    background-color: black; /* 你可以设置你想要的背景颜色 */  
+    padding: 5px; /* 你可以设置你想要的内边距 */  
+    border-radius: 5px; /* 你可以设置你想要的边框圆角 */  
+}
+td:hover .hideword{
+    display: inline;
+    opacity: 1;
+}
+#word1{
+    top: 300px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 800px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#word2{
+    top: 330px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 800px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+#word3{
+    top: 360px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+    left: 800px; /* 你可以调整这个值使得文字出现在你希望的位置 */  
+}
+
+#word1{
+    transition: opacity 0.7s ease-in-out; 
+    width: 200px;
+    background-color: #000000;
+}
+#word2{
+    transition: opacity 2.5s ease-in-out; 
+    width: 200px;
+    background-color: #000000;
+}
+#word3{
+    transition: opacity 6.5s ease-in-out; 
+    width: 100px;
+    background-color: #000000;
+}
+
+/* 登录成功动画样式 */  
+.success-animation {   
+  animation: successAnimation 2s ease-out forwards;   
+}  
+

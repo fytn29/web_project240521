@@ -1,0 +1,56 @@
+*{
+    margin-top: 0;
+    padding-top: 0;
+}
+main{
+    
+}
+main th{
+    width: 400px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(140, 138, 138);
+}
+main td{
+    left:20px;
+    width: 400px;
+    text-align: center;
+    font-size: small;
+    height: 20px;
+    color: rgb(77, 76, 76);
+}
+#回收站{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(77, 76, 76);
+
+}
+
+.hideword{
+    display: inline;
+    position: absolute; /* 使得文字出现在容器的相对位置 */  
+    opacity: 0;  
+    font-size: 12px;
+    color: white; /* 你可以设置你想要的文字颜色 */  
+    background-color: black; /* 你可以设置你想要的背景颜色 */  
+    padding: 5px; /* 你可以设置你想要的内边距 */  
+    border-radius: 5px; /* 你可以设置你想要的边框圆角 */  
+}
+#dcjg{
+    transition: opacity 0.7s ease-in-out; 
+    top:340px;
+    left: 240px; 
+}
+td:hover .hideword{
+    display: inline;
+    opacity: 1;
+}
+.close{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    right: 5px;
+    top: 0px;
+}
